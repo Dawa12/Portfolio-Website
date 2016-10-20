@@ -1,5 +1,16 @@
+html,
+body {
+  background-color: lightblue;
+  height: 100%;
+/*   left: 50%; */
+  text-align: center;
+}
+
+* {
+  margin: 5px;
+}
+
 div {
-  /*margin: 0 auto;  */
   padding: .4em;
 }
 
@@ -11,25 +22,52 @@ textarea {
 }
 
 form {
+/*   position: absolute; */
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 90px;
+  width: 600px;
+  
+  margin: 0 auto;
   border: 2px solid black;
-  margin: 0 0 3px 0;
-  display: inline-block;
+/*   display: inline-block; */
   padding: 2px;
-  /*position: absolute;
-  top: 100px;
-  left: 900px;*/
-}
-
-form > div {
-  /*height: 25px;*/
-}
-
-/* Why doesn't h2 padding change? */
-form + h2 { 
-  padding: 1px;
 }
 
 
+footer {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  width: 600px;
+  
+  margin: 0 auto;
+}
 
+#about {
+  margin: 20px;
 
+}
+d
+nav {
+  display: flex;
+/*   why vertical center doesn't work?' */
+/*   align-items: center; */
+  justify-content: flex-end;
+}
+
+header {
+  width: 97%;
+  height: 50px;
+  background-color: white;
+  border: 5px solid black;  
+}
+
+#page_head {
+  margin-top: 20px;
+  text-align: center;
+}
 
