@@ -1,9 +1,14 @@
 html,
 body {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   height: 100%;
 /*   left: 50%; */
   text-align: center;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
 }
 
 * {
@@ -27,9 +32,9 @@ form {
   right: 0;
   bottom: 90px;
   width: 600px;
-  
+
   margin: 0 auto;
-  border: 2px solid black;
+  border: 1px solid black;
 /*   display: inline-block; */
   padding: 2px;
 }
@@ -59,7 +64,7 @@ header {
   width: 97%;
   height: 50px;
   background-color: white;
-  border: 5px solid black;  
+  border: 1px solid black;
 }
 
 #page_head {
@@ -70,4 +75,32 @@ header {
 input {
   width: 20%;
   height: 2em;
+}
+
+#about {
+  width: 60%;
+  margin: 20px auto;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+#about img {
+  float: left;
+  border-radius: 20%;
+}
+
+#about p {
+  /*float: right;*/
+}
+
+#portfolio {
+  /*float: none;*/
+  clear: both;
+  margin: 40px 0;
+  padding-top: 30px;
+}
+
+img {
+  border-radius: 15%;
 }
