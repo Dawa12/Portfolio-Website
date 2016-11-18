@@ -22,7 +22,6 @@ textarea {
 }
 
 form {
-/*   position: absolute; */
   text-align: center;
   left: 0;
   right: 0;
@@ -37,21 +36,18 @@ form {
 
 
 footer {
-  position: absolute;
+  position: relative;
   text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 30px;
+  bottom: 0px;
   width: 600px;
-  
-  margin: 0 auto;
+  margin: 40px auto;
+
 }
 
 #about {
   margin: 20px;
-
 }
-d
+
 nav {
   display: flex;
 /*   why vertical center doesn't work?' */
@@ -71,3 +67,7 @@ header {
   text-align: center;
 }
 
+input {
+  width: 20%;
+  height: 2em;
+}
