@@ -1,13 +1,10 @@
 html,
 body {
-  /*background-color: lightblue;*/
   height: 100%;
-/*   left: 50%; */
   text-align: center;
 }
 
 body {
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -15,51 +12,7 @@ body {
   margin: 5px;
 }
 
-div {
-  padding: .4em;
-}
-
-textarea {
-  length: 500px;
-  width: 500px;
-  font-size: 18px;
-  /*display: block;*/
-}
-
-form {
-  text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 90px;
-  width: 600px;
-
-  margin: 0 auto;
-  border: 1px solid black;
-/*   display: inline-block; */
-  padding: 2px;
-}
-
-
-footer {
-  position: relative;
-  text-align: center;
-  bottom: 0px;
-  width: 600px;
-  margin: 40px auto;
-
-}
-
-#about {
-  margin: 20px;
-}
-
-nav {
-  display: flex;
-/*   why vertical center doesn't work?' */
-/*   align-items: center; */
-  justify-content: flex-end;
-}
-
+/*header & nav*/
 header {
   width: 97%;
   height: 50px;
@@ -67,14 +20,28 @@ header {
   border: 1px solid black;
 }
 
-#page_head {
-  margin-top: 20px;
-  text-align: center;
+header nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
-input {
-  width: 20%;
-  height: 2em;
+/*----- Main Body Section -----*/
+#main {
+  margin-top: 20px;
+}
+
+/*About Me Image and Text*/
+#about {
+}
+
+#about img {
+  float: left;
+  border-radius: 20%;
+  margin-right: 40px;
+}
+
+#about p {
+  margin-left: 40px;
 }
 
 #about {
@@ -85,22 +52,53 @@ input {
 #about h2 {
   margin-bottom: 20px;
 }
-#about img {
-  float: left;
-  border-radius: 20%;
-}
 
-#about p {
-  /*float: right;*/
-}
-
-#portfolio {
-  /*float: none;*/
+/*portfolio projects*/
+#portfolio_container {
   clear: both;
   margin: 40px 0;
   padding-top: 30px;
 }
 
-img {
+#portfolio_container img {
   border-radius: 15%;
+  width: 400px;
+  height: 350px;
+}
+
+/*section semantic tag modifies default h1 tag; therefore manually specifiying font size*/
+#portfolio_container h1 {
+  font-size: 30px;
+}
+
+/*Contact Me Form*/
+#contact_form {
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 90px;
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#contact_form textarea {
+  length: 500px;
+  width: 500px;
+  font-size: 18px;
+}
+
+#contact_form input {
+  width: 20%;
+  height: 2em;
+}
+
+/*footer*/
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0px;
+  width: 600px;
+  margin: 40px auto;
 }
