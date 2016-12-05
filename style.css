@@ -28,24 +28,36 @@ header nav {
 
 /*----- Main Body Section -----*/
 #main {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 /*About Me Image and Text*/
+
 #about img {
-  float: left;
+  /*float: left;*/
+  display: inline-block;
+  width: 200px;
+  height: auto;
   border-radius: 20%;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 #about p {
-  margin-left: 50px;
+  display: inline-block;
+  position: relative;
+  top: -140px;
+  width: 45%;
   text-align: left;
+  margin-left: 20px;
 }
 
-#about {
+section#about {
+  overflow: auto;
+  /*to dynamically resize profile image with zoom*/
+
+  /*clear: both;*/
   width: 60%;
-  height: 250px;
+  /*height: 500px;*/
   margin: 20px auto;
 }
 
@@ -55,8 +67,10 @@ header nav {
 
 /*portfolio projects*/
 section#portfolio_container {
-  margin: 40px 0;
-  padding-top: 30px;
+}
+
+.portfolio_item {
+  margin: 0 auto;
 }
 
 .portfolio_item img {
@@ -90,11 +104,17 @@ img.tiny_logo.github_logo {
 }
 
 /*section semantic tag modifies default h1 tag; therefore manually specifiying font size*/
+#portfolio_container {
+}
+
 #portfolio_container h1 {
   font-size: 30px;
 }
 
 /*Contact Me Form*/
+#contact_me {
+  margin-top: 30px;
+}
 #contact_me h1 {
   font-size: 30px;
 }
@@ -109,7 +129,11 @@ img.tiny_logo.github_logo {
   height: 30px;
 }
 
-#contact_form {
+
+
+
+
+/*#contact_form {
   text-align: center;
   left: 0;
   right: 0;
@@ -129,7 +153,7 @@ img.tiny_logo.github_logo {
 #contact_form input {
   width: 20%;
   height: 2em;
-}
+}*/
 
 /*footer*/
 footer {
