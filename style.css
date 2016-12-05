@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  /* will center all children elements of body - not just text */
   text-align: center;
 }
 
@@ -31,21 +32,20 @@ header nav {
 }
 
 /*About Me Image and Text*/
-#about {
-}
-
 #about img {
   float: left;
   border-radius: 20%;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 #about p {
-  margin-left: 40px;
+  margin-left: 50px;
+  text-align: left;
 }
 
 #about {
   width: 60%;
+  height: 250px;
   margin: 20px auto;
 }
 
@@ -54,16 +54,39 @@ header nav {
 }
 
 /*portfolio projects*/
-#portfolio_container {
-  clear: both;
+section#portfolio_container {
   margin: 40px 0;
   padding-top: 30px;
 }
 
-#portfolio_container img {
-  border-radius: 15%;
+.portfolio_item img {
+  border-radius: 5%;
   width: 400px;
-  height: 350px;
+  height: 300px;
+}
+
+#portfolio_container .portfolio_item {
+  margin-top: 40px;
+}
+
+.portfolio_item {
+  /*text-align: left;*/
+}
+
+.portfolio_item p, ul {
+  width: 500px;
+  text-align: left;
+  margin: 10px auto 0;
+}
+
+img.tiny_logo {
+  width: initial;
+  height: initial;
+}
+
+img.tiny_logo.github_logo {
+  position: relative;
+  top: -5px;
 }
 
 /*section semantic tag modifies default h1 tag; therefore manually specifiying font size*/
@@ -72,6 +95,20 @@ header nav {
 }
 
 /*Contact Me Form*/
+#contact_me h1 {
+  font-size: 30px;
+}
+
+#contact_me p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#contact_me img {
+  width: 30px;
+  height: 30px;
+}
+
 #contact_form {
   text-align: center;
   left: 0;
