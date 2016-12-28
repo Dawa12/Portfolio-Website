@@ -18,7 +18,7 @@ header {
   width: 97%;
   height: 50px;
   background-color: white;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 header nav {
@@ -34,19 +34,15 @@ header nav {
 /*About Me Image and Text*/
 
 #about img {
-  /*float: left;*/
   display: inline-block;
-  width: 200px;
   height: auto;
   border-radius: 20%;
   margin-right: 20px;
+  float: left;
 }
 
 #about p {
-  display: inline-block;
   position: relative;
-  top: -140px;
-  width: 45%;
   text-align: left;
   margin-left: 20px;
 }
