@@ -48,13 +48,13 @@ header nav {
   margin-left: 20px;
 }
 
-section#about {
-  overflow: auto;
-  /*to dynamically resize profile image with zoom*/
+#about h3 {
+  text-align: left;
+}
 
-  /*clear: both;*/
+#about {
+  overflow: auto;
   width: 60%;
-  /*height: 500px;*/
   margin: 20px auto;
 }
 
@@ -80,14 +80,16 @@ section#portfolio_container {
   margin-top: 40px;
 }
 
-.portfolio_item {
-  /*text-align: left;*/
-}
-
-.portfolio_item p, ul {
+.portfolio_item * {
   width: 500px;
   text-align: left;
   margin: 10px auto 0;
+}
+
+.portfolio_item strong {
+  width: 500px;
+  text-align: left;
+  display: block;
 }
 
 img.tiny_logo {
