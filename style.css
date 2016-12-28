@@ -3,7 +3,7 @@ body {
   height: 100%;
   /* will center all children elements of body - not just text */
   text-align: center;
-/*   background-color: green; */
+   background-color: green; 
 }
 
 body {
