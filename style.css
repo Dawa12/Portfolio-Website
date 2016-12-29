@@ -3,6 +3,7 @@ body {
   height: 100%;
   /* will center all children elements of body - not just text */
   text-align: center;
+   /*background-color: green; */
 }
 
 body {
@@ -20,6 +21,9 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 1;
+  padding: 0;
+  margin: 0;
+  top: 0;
 }
 
 nav a {
@@ -37,6 +41,8 @@ nav a:hover {
 /*----- Main Body Section -----*/
 #main {
   /*margin-top: 20px;*/
+  position: relative;
+  top: 70px;
 }
 
 /*About Me Image and Text*/
@@ -55,46 +61,51 @@ nav a:hover {
   margin-left: 20px;
 }
 
-section#about {
-  overflow: auto;
-  /*to dynamically resize profile image with zoom*/
+#about h3 {
+  text-align: left;
+}
 
-  /*clear: both;*/
+#about {
+  overflow: auto;
   width: 60%;
-  /*height: 500px;*/
   margin: 20px auto;
+  margin-top: 90px;
 }
 
 #about h2 {
   margin-bottom: 20px;
 }
 
-/*portfolio projects*/
-section#portfolio_container {
-}
-
 .portfolio_item {
   margin: 0 auto;
-}
-
-.portfolio_item img {
-  border-radius: 5%;
-  width: 400px;
-  height: 300px;
 }
 
 #portfolio_container .portfolio_item {
   margin-top: 40px;
 }
 
-.portfolio_item {
-  /*text-align: left;*/
-}
-
-.portfolio_item p, ul {
+.portfolio_item * {
   width: 500px;
   text-align: left;
   margin: 10px auto 0;
+}
+
+.portfolio_item h2 {
+  text-align: center;
+}
+
+.portfolio_item strong {
+  width: 500px;
+  text-align: left;
+  display: block;
+}
+
+.portfolio_item img {
+  border-radius: 5%;
+  width: 700px;
+  height: 400px;
+  /*margin: 0 30px 0 30px;*/
+  margin: 10px;
 }
 
 img.tiny_logo {
@@ -162,71 +173,38 @@ footer {
   bottom: 0px;
   width: 600px;
   margin: 40px auto;
+  margin-top: 90px;
 }
 
+/* media queries */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+  body {
+    font-size: 14px;
+  }
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0b1 | 201101
-   NOTE: WORK IN PROGRESS
-   USE WITH CAUTION AND TEST WITH ABANDON */
+  nav {
+    font-size: 30px;
+  }
 
-/* modified rset to remove ol, ul, li */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
+  nav a {
+    margin: 0 40px;
+  }
 
-/*Will comment this section out*/
-/*ol, ul {
-	list-style: none;
-}*/
+  .portfolio_item * {
+    width: 80%;
+  }
 
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+  .portfolio_item strong {
+    display: inline;
+  }
 
-/* remember to define visible focus styles!
-:focus {
-	outline: ?????;
-} */
+  #about {
+    width: 80%;
+  }
 
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  #about img {
+    width: 200px;
+    height: 200px;
+  }
 }
