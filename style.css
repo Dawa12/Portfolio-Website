@@ -9,22 +9,23 @@ body {
   margin: 0 auto;
 }
 
-* {
-  margin: 5px;
-}
+/* nav bar */
 
-/*header & nav*/
-header {
-  width: 97%;
+nav {
+  background-color: lightblue;
   height: 50px;
-  background-color: white;
-  /*border: 1px solid black;*/
-}
 
-header nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  width: 100%;
 }
+
+nav a {
+  margin: 15px;
+}
+
+
 
 /*----- Main Body Section -----*/
 #main {
