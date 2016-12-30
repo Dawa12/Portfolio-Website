@@ -130,21 +130,38 @@ img.tiny_logo.github_logo {
 }
 
 /*Contact Me Form*/
-#contact_me {
-  margin-top: 30px;
-}
 #contact_me h1 {
+  line-height: 40%;
+}
+
+#resume input {
+  width: 25%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  background-color: lightblue;
+
+}
+
+h1 {
   font-size: 30px;
+}
+
+#contact_me {
+  position: relative;
+  top: 14px;
 }
 
 #contact_me p {
   font-size: 25px;
   margin-bottom: 30px;
+  line-height: 40%;
 }
 
 #contact_me img {
   width: 30px;
   height: 30px;
+  /*line-height: 100px;*/
 }
 
 /*#contact_form {
