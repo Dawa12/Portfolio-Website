@@ -2,21 +2,26 @@
 <html>
   <head>
     <title>Dawa's Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
     <nav>
-      <a href="#about">About</a>
+      <a href="#home">Home</a>
+      <!-- <a href="#about">About</a> -->
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a name="home"></a>
 
 <!---*****  main *****--->
     <div id="main">
-      <a name="about"></a>
       <!-- Adding jump link for about section -->
+      <a name="about"></a>
       <section id="about">
-        <h1>Dawa Portfolio</h1>
+        <h1 id="main-title">Dawa Portfolio</h1>
         <div id="about-description">
           <h2>About me</h2>
           <img id="profile-pic" src="./assets/profile.jpg" alt="profile_pic" title="that's me!"/>
@@ -24,6 +29,8 @@
         </div>
       </section>
 
+
+      <a name="projects"></a>
       <section id="portfolio_container">
         <div id="portfolio-wrapper">
           <h1>Projects</h1>
@@ -37,7 +44,8 @@
             <br>
             <br>
 
-            <div class="flex-parent">
+
+            <div>
               <div>
                 <p>
                   <strong>The problem</strong>
@@ -160,6 +168,7 @@
         <div></div>
       </section>
 
+      <a name="home"></a>
       <section id="resume">
         <h1>Resume</h1>
         <a href="assets/Dawa%20G.%20Sherpa%20Resume.pdf" download>

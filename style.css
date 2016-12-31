@@ -80,6 +80,17 @@ nav a:hover {
   background-size: cover;*/
 }
 
+#main-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+#main-title:hover {
+  text-decoration: underline;
+}
+
 /*About Me Image and Text*/
 
 #about {
@@ -162,6 +173,11 @@ nav a:hover {
   margin: 10px;
 }
 
+.portfolio_item:first-of-type img:not(.tiny_logo) {
+  /*background-color: yellow;*/
+  border: 1px solid black;
+}
+
 img.tiny_logo {
   width: initial;
   height: initial;
@@ -209,7 +225,15 @@ img.tiny_logo.github_logo {
   border-radius: 20px;
   font-size: 1.2em;
   background-color: lightblue;
+}
 
+#resume input:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 h1 {
@@ -275,6 +299,8 @@ footer {
   justify-content: center;
 }
 
+
+
 /* media queries */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
@@ -295,8 +321,13 @@ footer {
     background-color: white;
   }
 
-  .portfolio_item * {
-    width: 80%;
+  /*remove anchor tag underlines*/
+  /*a {
+    text-decoration: none !important;
+  }*/
+
+  .portfolio_item p {
+    width: 70%;
   }
 
   .portfolio_item strong {
@@ -310,7 +341,6 @@ footer {
   }
 
   .portfolio_item .flex-parent div {
-    /*width: 70%;*/
     background-color: lightblue;
   }
 
