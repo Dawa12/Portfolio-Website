@@ -151,11 +151,11 @@ nav a:hover {
 .portfolio_item * {
   text-align: left;
   margin: 10px auto 0;
-  /*font-size: 1em;*/
 }
 
 section.portfolio_item p, h2, h3, ul {
-  width: 65vw;
+  /*width: 75vw;*/
+  width: 55%;
 }
 
 .portfolio_item h2 {
