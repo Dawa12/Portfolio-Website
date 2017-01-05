@@ -20,13 +20,8 @@ nav a:hover {
   background-color: white;
 }
 
-/*remove anchor tag underlines*/
-/*a {
-  text-decoration: none !important;
-}*/
-
-.portfolio_item p {
-  width: 70%;
+section.portfolio_item p, h2, h3, ul {
+  width: 80vw;
 }
 
 .portfolio_item strong {
@@ -43,16 +38,10 @@ nav a:hover {
   background-color: lightblue;
 }
 
-/*p {
-  line-height: 1.5;
-}*/
-
 #about {
-  /*width: 80%;*/
 }
 
 #about img {
   width: 200px;
   height: 200px;
 }
-/*}*/
