@@ -3,6 +3,8 @@ body {
   height: 100vh;
   /* will center all children elements of body - not just text */
   text-align: center;
+  /*background-color: lightblue;*/
+
 
   /* Overflow applied to make html / body 100% of page height - which was prevent due to use of float*/
   overflow: auto;
@@ -297,60 +299,4 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-
-/* media queries */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-  body {
-    font-size: 14px;
-  }
-
-  nav {
-    font-size: 30px;
-  }
-
-  nav a {
-    margin: 0 20px;
-  }
-
-  nav a:hover {
-    width: 105px;
-    background-color: white;
-  }
-
-  /*remove anchor tag underlines*/
-  /*a {
-    text-decoration: none !important;
-  }*/
-
-  .portfolio_item p {
-    width: 70%;
-  }
-
-  .portfolio_item strong {
-    display: inline;
-  }
-
-  .portfolio_item .flex-parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .portfolio_item .flex-parent div {
-    background-color: lightblue;
-  }
-
-
-  #about {
-    /*width: 80%;*/
-  }
-
-  #about img {
-    width: 200px;
-    height: 200px;
-  }
 }
