@@ -173,8 +173,8 @@ section.portfolio_item p, h2, h3, ul {
 
 .portfolio_item img {
   border-radius: 5%;
-  width: 500px;
-  height: 300px;
+  /* width: 357px;
+  height: 200px; */
   /*margin: 0 30px 0 30px;*/
   margin: 10px;
 }
@@ -183,6 +183,11 @@ section.portfolio_item p, h2, h3, ul {
   /*background-color: yellow;*/
   border: 1px solid black;
 }
+
+/* .portfolio_item.container img {
+  width: 357px;
+  height: 200px;
+} */
 
 img.tiny_logo {
   width: initial;
@@ -303,4 +308,17 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.space-shooter img {
+  /* height: 200px; */
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.track-map {
+  background: lightblue;
+  height: 700px;
 }

@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 nav li:hover {
   background-color: #9dcaa7;
 }
@@ -5,6 +9,7 @@ nav li:hover {
 section#about {
   margin-top: 55px;
   text-align: center;
+  /* text-align: center; */
 }
 
 .portfolio_item:first-of-type img:not(.tiny_logo) {
@@ -14,11 +19,13 @@ section#about {
 img.tiny_logo {
   width: initial;
   height: initial;
+  display: inline;
 }
 
 img.tiny_logo.github_logo {
   position: relative;
-  top: -5px;
+  top: -2px;
+  height: 30px;
 }
 #contact_me .tiny_logo {
   margin: 20px;
@@ -53,7 +60,7 @@ img.tiny_logo.github_logo {
   -o-background-size: cover;
   background-size: cover; */
 
-  background-image: url(assets/france.jpg);
+  background-image: url(/assets/france.jpg);
   /* background-repeat:no-repeat;
   background-size:contain;
   background-position:center; */
@@ -63,7 +70,7 @@ img.tiny_logo.github_logo {
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
-  background-position:center;
+background-position:center;
   
   
 }
@@ -73,14 +80,17 @@ img.tiny_logo.github_logo {
   display: inline-block;
   height: auto;
   border-radius: 20%;
-  margin-right: 20px;
-  float: left;
+  margin-right: 33px;
+  /* float: left; */
+  width: 68%;
 }
 
 #about p {
   position: relative;
   text-align: left;
+  /* display: inline; */
   margin-left: 20px;
+  font-size: 1.5em;
 }
 
 #about h3 {
@@ -91,33 +101,45 @@ img.tiny_logo.github_logo {
   margin-bottom: 20px;
 }
 
+
 #about-description {
-  width: 80%;
+  width: 60%;
   padding: 20px;
   margin: 0 auto;
+  /* height: 100%; */
   /* font-size: 1.3em; */
 }
 
 @media screen and (max-width:630px) {
+  body {
+    font-size: 11px;
+  }
+
   #about-description {
     width: 80%;
     padding: 20px;
     margin: 0 auto;
     /* font-size: 1.3em; */
+    float: none;
   }
 
   #about-description img {
     /* display: block; */
     /* width: 70%; */
     margin: 0 auto;
+    float: none;
   }
 
   #about-description p {
     display: block;
     width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
-    
+  p, li, input {
+    font-size: 1.5em;
+  } 
 }
 
 
@@ -126,5 +148,44 @@ img.tiny_logo.github_logo {
 } */
 
 /* @media (min-width: @screen-sm-min) { 
-
+  font-size: 34px;
 } */
+
+
+@media (max-width: @screen-lg) { 
+  
+ }
+
+ div.row {
+  margin: 0 auto;
+  width: 81%;
+  height: 100%;
+ }
+
+ .wrapper-footer {
+   margin-top: 50px;
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+   /* background-color: #eee; */
+   width: 100%;
+   position: absolute;
+   bottom: 0px;
+ }
+
+ footer {
+   padding: 20px 0;
+   text-align: center;
+ }
+
+.track-map {
+/*   background: lightblue; */
+  height: 700px;
+}
+/* 
+.track-map .container {
+  height: 400px;
+} */
+
+.gallery-img {
+  height: 310px;
+}
