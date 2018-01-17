@@ -1,14 +1,13 @@
 html {
-  min-height: 100%;  
+  min-height: 100%;
   position: relative;
 }
 
 body {
   font-size: 18px;
 
-/*   space for footer */
+  /*   space for footer */
   margin-bottom: 60px;
-
 }
 
 nav li:hover {
@@ -57,25 +56,19 @@ img.tiny_logo.github_logo {
 #about {
   width: 100%;
   height: 600px;
-  /* overflow: auto; */
+  overflow: auto;
   margin: 0 auto;
   color: rgb(247, 255, 254);
   padding: 15px;
-
- background-image: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),
-  url(/assets/france.jpg);
-  background-repeat:no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/france.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
-
 
 #about img {
   display: inline-block;
@@ -114,8 +107,7 @@ img.tiny_logo.github_logo {
 
 #about h2:hover {
   text-decoration: underline;
-/*   border-bottom: 10px solid; */
-
+  /*   border-bottom: 10px solid; */
 }
 
 div.row {
@@ -124,7 +116,6 @@ div.row {
   height: 100%;
   text-align: center;
 }
-
 
 /* 
 .wrapper-footer {
@@ -136,14 +127,13 @@ div.row {
   bottom: 0px;
 } */
 
-
-
-.footer, .navbar {
+.footer,
+.navbar {
   font-size: 1.2rem;
 }
 
-
-.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
+.nav-pills .nav-link.active,
+.show > .nav-pills .nav-link {
   background-color: #9db6cf;
 }
 
@@ -155,12 +145,10 @@ div.row {
   animation-name: slidein;
 }
 
-
-
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -177,7 +165,6 @@ nav {
   font-size: 2.2em;
   font-family: cursive;
   font-style: bold;
-
 }
 
 .container img {
@@ -189,14 +176,15 @@ section {
 }
 
 div#portfolio-wrapper {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
-.bottom-buffer { 
-  margin-botton:30px;
+.bottom-buffer {
+  margin-botton: 30px;
 }
 
-.container h1, h2 {
+.container h1,
+h2 {
   text-align: center;
   margin: 36px;
 }
@@ -209,7 +197,7 @@ div#portfolio-wrapper {
   margin: 0 auto;
 }
 
-.first-spaceship img { 
+.first-spaceship img {
   height: 270px;
 }
 
@@ -225,7 +213,6 @@ section#resume {
 .btn-primary:hover {
   background-color: black;
 }
-
 
 .tiny_logo:hover {
   transform: scale(1.5);
@@ -244,7 +231,6 @@ section#contact_me p {
   font-style: italic;
 }
 
-
 /* .footer {
   padding: 20px 0;
   text-align: center;
@@ -262,6 +248,12 @@ section#contact_me p {
 
  */
 
+.contact-container #profile-pic {
+  /* display: inline-block; */
+  /* height: auto; */
+  border-radius: 20%;
+  min-width: 250px;
+}
 
 .footer {
   position: absolute;
@@ -272,4 +264,12 @@ section#contact_me p {
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
   text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#portfolio-title {
+  font-size: 3em;
 }
